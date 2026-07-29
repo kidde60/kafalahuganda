@@ -120,7 +120,7 @@ export default function Home({ onNavigate }: HomeProps) {
       </div>
 
       <footer className="bg-[#1a3a2a] text-white/55 text-center py-8 text-[13px]">
-        © 2025 Ummah Cares Charity Platform · MIT License · Built with ❤️
+        © 2025 Kafalah Uganda Charity Platform · MIT License · Built with ❤️
       </footer>
     </div>
   );

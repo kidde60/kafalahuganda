@@ -137,7 +137,7 @@ export default function CampaignDetail({
         </div>
       </div>
       <footer className="bg-[#1a3a2a] text-white/55 text-center py-8 text-[13px]">
-        © 2025 Ummah Cares Charity Platform
+        © 2025 Kafalah Uganda Charity Platform
       </footer>
     </div>
   );

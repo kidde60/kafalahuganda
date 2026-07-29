@@ -12,7 +12,7 @@ export default function Nav({ onNavigate, currentScreen }: NavProps) {
         className="font-serif text-white text-xl font-bold cursor-pointer"
         onClick={() => onNavigate("home")}
       >
-        🌱 Ummah Cares
+        🌱 Kafalah Uganda
       </div>
       <div className="flex gap-6 items-center">
         <span

@@ -18,7 +18,7 @@ export default function AdminLogin({ onNavigate }: AdminLoginProps) {
         <div className="absolute w-[600px] h-[600px] rounded-full border border-[rgba(76,175,125,0.1)] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
         <div className="text-[3rem] mb-6 z-10">🌱</div>
         <h1 className="font-serif text-white text-[2.5rem] z-10 mb-2">
-          Ummah Cares Admin
+          Kafalah Uganda Admin
         </h1>
         <p className="text-white/55 z-10 max-w-[280px] leading-[1.7] text-[.9rem]">
           Manage campaigns, track donations, and upload media — all in one

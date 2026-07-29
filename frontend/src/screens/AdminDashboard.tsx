@@ -46,7 +46,7 @@ export default function AdminDashboard({ onNavigate }: AdminDashboardProps) {
       {/* Sidebar */}
       <div className="bg-[#1a3a2a] py-6 sticky top-0 h-screen overflow-y-auto">
         <div className="font-serif text-white text-[1.1rem] px-6 pb-6 border-b border-white/10 mb-4 font-bold">
-          🌱 Ummah Cares Admin
+          🌱 Kafalah Uganda Admin
         </div>
         {sidebarItems.map((item) => (
           <div

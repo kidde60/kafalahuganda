@@ -12,13 +12,13 @@ export default function Home({ onNavigate }: HomeProps) {
   return (
     <div>
       {/* Hero */}
-      <div className="relative overflow-hidden bg-[linear-gradient(135deg,#10261b_0%,#1a3a2a_52%,#214a33_100%)] px-4 py-16 sm:px-8 md:py-24">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12),transparent_28%),radial-gradient(circle_at_20%_30%,rgba(76,175,125,0.2),transparent_24%)]" />
-        <div className="absolute -right-16 top-10 h-72 w-72 rounded-full bg-[#4caf7d]/10 blur-3xl" />
+      <div className="relative overflow-hidden bg-[linear-gradient(135deg,#0f2450_0%,#173a8a_56%,#102b63_100%)] px-4 py-16 sm:px-8 md:py-24">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12),transparent_28%),radial-gradient(circle_at_20%_30%,rgba(255,138,0,0.22),transparent_24%)]" />
+        <div className="absolute -right-16 top-10 h-72 w-72 rounded-full bg-[#ff8a00]/12 blur-3xl" />
         <div className="absolute -left-20 bottom-0 h-80 w-80 rounded-full bg-white/5 blur-3xl" />
         <div className="relative mx-auto grid max-w-[1180px] items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-[12px] font-medium uppercase tracking-[0.18em] text-[#b8f2cb]">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-[12px] font-medium uppercase tracking-[0.18em] text-[#ffd39b]">
               Sponsor a child. Change a future.
             </div>
             <h1 className="font-serif mx-auto mt-6 max-w-[760px] text-[clamp(2.6rem,6vw,4.4rem)] leading-[1] text-white lg:mx-0">
@@ -78,8 +78,8 @@ export default function Home({ onNavigate }: HomeProps) {
                   Featured sponsor story
                 </div>
                 <div className="mt-4 flex items-center gap-4">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#4caf7d]/20 text-[2rem]">
-                    👧
+                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#ff8a00]/20 text-[2rem]">
+                    📘
                   </div>
                   <div>
                     <div className="font-serif text-[1.5rem]">Amina Kato</div>
@@ -98,7 +98,7 @@ export default function Home({ onNavigate }: HomeProps) {
                     <span>60%</span>
                   </div>
                   <div className="mt-3 h-2 rounded-full bg-white/10">
-                    <div className="h-2 w-[60%] rounded-full bg-[#4caf7d]" />
+                    <div className="h-2 w-[60%] rounded-full bg-[#ff8a00]" />
                   </div>
                   <div className="mt-3 flex items-center justify-between text-[12px] text-white/55">
                     <span>$18 received</span>
@@ -107,7 +107,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 </div>
                 <div className="mt-5 grid grid-cols-2 gap-3">
                   <button
-                    className="rounded-xl border-none bg-[#4caf7d] px-4 py-3 text-[14px] font-medium text-white"
+                    className="rounded-xl border-none bg-[#ff8a00] px-4 py-3 text-[14px] font-medium text-white"
                     onClick={() => onNavigate("student-detail", "amina-k")}
                   >
                     View Profile
@@ -150,7 +150,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="font-serif text-[1.75rem] text-[#1a3a2a]">
               Why Sponsors Give Here
             </div>
-            <span className="text-[13px] font-medium text-[#4caf7d]">
+            <span className="text-[13px] font-medium text-[#173a8a]">
               Transparent, student-first giving
             </span>
           </div>
@@ -173,7 +173,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 key={item.title}
                 className="rounded-2xl border border-[#e5e0d8] bg-white p-6 shadow-[0_10px_28px_rgba(0,0,0,0.04)]"
               >
-                <div className="font-serif text-[1.3rem] text-[#1a3a2a]">
+                  <div className="font-serif text-[1.3rem] text-[#173a8a]">
                   {item.title}
                 </div>
                 <p className="mt-3 text-[14px] leading-[1.8] text-[#6b7280]">
@@ -244,7 +244,7 @@ export default function Home({ onNavigate }: HomeProps) {
       </div>
 
       {/* Impact section */}
-      <div className="bg-[#1a3a2a] px-4 py-16 sm:px-8">
+      <div className="bg-[#173a8a] px-4 py-16 sm:px-8">
         <div className="mx-auto max-w-[1100px] text-center">
           <h2 className="font-serif text-white text-[2rem] mb-3">
             Our Impact in Numbers

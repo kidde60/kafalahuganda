@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { Screen } from "../types";
+import logo from "../assets/eduLogo.png";
 
 interface NavProps {
   onNavigate: (screen: Screen) => void;
@@ -23,23 +24,35 @@ export default function Nav({ onNavigate, currentScreen }: NavProps) {
   }
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#1a3a2a] px-4 py-3 md:px-8">
+    <nav className="site-nav sticky top-0 z-50 bg-[#0f2450] px-4 py-3 md:px-8">
       <div className="flex items-center justify-between gap-4">
         <div
-          className="font-serif cursor-pointer text-lg font-bold text-white md:text-xl"
+          className="flex min-w-0 cursor-pointer items-center gap-3"
           onClick={() => go("home")}
         >
-          🎓 Education & Skills Foundation
+          <img
+            src={logo}
+            alt="Education & Skills Foundation logo"
+            className="h-10 w-10 rounded-lg bg-white object-contain p-1 shadow-[0_8px_20px_rgba(0,0,0,0.18)]"
+          />
+          <div className="min-w-0 leading-tight">
+            <div className="truncate font-serif text-[0.95rem] font-bold text-white md:text-[1.05rem]">
+              Education & Skills Foundation
+            </div>
+            <div className="text-[11px] uppercase tracking-[0.18em] text-[#ff8a00]">
+              Learn. Train. Thrive.
+            </div>
+          </div>
         </div>
         <button
-          className="inline-flex items-center justify-center rounded-lg border border-white/15 bg-white/8 px-3 py-2 text-sm text-white md:hidden"
+          className="nav-mobile-toggle items-center justify-center rounded-lg border border-white/15 bg-white/8 px-3 py-2 text-sm text-white"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle navigation menu"
           aria-expanded={open}
         >
           ☰
         </button>
-        <div className="hidden items-center gap-6 md:flex">
+        <div className="nav-desktop-menu shrink-0 items-center gap-5 md:flex-nowrap">
           <span
             className={linkClass(currentScreen === "home")}
             onClick={() => go("home")}
@@ -79,7 +92,7 @@ export default function Nav({ onNavigate, currentScreen }: NavProps) {
         </div>
       </div>
       {open && (
-        <div className="mt-3 rounded-2xl border border-white/10 bg-[#153224] p-3 text-white md:hidden">
+        <div className="nav-mobile-menu mt-3 rounded-2xl border border-white/10 bg-[#102b63] p-3 text-white">
           <div className="flex flex-col">
             {[
               ["Home", "home"],

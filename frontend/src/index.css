@@ -12,7 +12,38 @@
     min-height: 100vh;
     font-size: 15px;
   }
+  ::selection {
+    background: #ff8a00;
+    color: #ffffff;
+  }
   .font-serif {
     font-family: 'Playfair Display', serif;
+  }
+
+  .site-nav {
+    display: block;
+  }
+
+  .nav-desktop-menu {
+    display: none;
+  }
+
+  .nav-mobile-toggle {
+    display: flex;
+  }
+
+  .nav-mobile-menu {
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    .nav-desktop-menu {
+      display: flex;
+    }
+
+    .nav-mobile-toggle,
+    .nav-mobile-menu {
+      display: none !important;
+    }
   }
 }

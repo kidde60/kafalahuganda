@@ -51,17 +51,20 @@ export default function CampaignDetail({
             {campaign.title}
           </h1>
           <p className="text-[.95rem] text-[#6b7280] leading-[1.8] mb-6">
-            Every child deserves access to quality education, yet thousands of
-            children in rural Kenya walk up to 8km each day just to reach the
-            nearest school. This campaign aims to build 10 fully equipped
-            schools with trained teachers, clean water, and sanitation
-            facilities — giving 3,000 children the future they deserve.
+            Every child and young person deserves access to quality learning,
+            practical skills, and a path to work. This program supports
+            classrooms, training materials, and mentorship that help learners
+            thrive.
           </p>
           <p className="text-[.95rem] text-[#6b7280] leading-[1.8] mb-6">
-            Your donation directly funds construction, teacher salaries, school
-            supplies, and a school meals programme. 92% of all funds go directly
-            to programme costs.
+            Your donation directly funds teaching resources, skills training,
+            digital access, scholarships, and community learning spaces. 92% of
+            all funds go directly to program costs.
           </p>
+          <div className="bg-[#f0faf4] border border-[#c6e8d5] rounded-xl px-4 py-3 text-[13px] text-[#1a6640] mb-6">
+            Child sponsorship available for <strong>$30</strong> or
+            <strong> 100 UGX</strong> per month.
+          </div>
           <div className="font-serif text-[1.1rem] text-[#1a3a2a] mb-4 font-medium">
             Campaign Gallery
           </div>
@@ -137,7 +140,7 @@ export default function CampaignDetail({
         </div>
       </div>
       <footer className="bg-[#1a3a2a] text-white/55 text-center py-8 text-[13px]">
-        © 2025 Kafalah Uganda Charity Platform
+        © 2025 Education & Skills Foundation
       </footer>
     </div>
   );

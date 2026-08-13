@@ -23,7 +23,7 @@ export default function Donate() {
             Complete Your Donation
           </h2>
           <p className="text-[13px] opacity-60">
-            Build 10 Schools in Rural Kenya
+            Education & Skills Foundation
           </p>
         </div>
         <div className="p-8">

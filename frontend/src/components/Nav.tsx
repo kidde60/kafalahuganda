@@ -12,7 +12,7 @@ export default function Nav({ onNavigate, currentScreen }: NavProps) {
         className="font-serif text-white text-xl font-bold cursor-pointer"
         onClick={() => onNavigate("home")}
       >
-        🌱 Kafalah Uganda
+        🎓 Education & Skills Foundation
       </div>
       <div className="flex gap-6 items-center">
         <span
@@ -24,6 +24,16 @@ export default function Nav({ onNavigate, currentScreen }: NavProps) {
           onClick={() => onNavigate("campaigns")}
         >
           Campaigns
+        </span>
+        <span
+          className={`text-[13px] cursor-pointer pb-[2px] border-b-[1.5px] transition-all ${
+            currentScreen === "students"
+              ? "text-white border-[#4caf7d]"
+              : "text-white/75 border-transparent hover:text-white hover:border-[#4caf7d]"
+          }`}
+          onClick={() => onNavigate("students")}
+        >
+          Students
         </span>
         <span
           className={`text-[13px] cursor-pointer pb-[2px] border-b-[1.5px] transition-all ${

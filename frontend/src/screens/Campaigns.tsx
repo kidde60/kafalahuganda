@@ -3,7 +3,7 @@ import type { Screen } from "../types";
 import { campaigns } from "../data";
 import CampaignCard from "../components/CampaignCard";
 
-const FILTERS = ["All", "Education", "Water", "Health", "Food", "Environment"];
+const FILTERS = ["All", "Primary", "O Level", "A Level", "Technical", "IT Skills"];
 
 interface CampaignsProps {
   onNavigate: (screen: Screen, campaignId?: string) => void;
@@ -21,10 +21,11 @@ export default function Campaigns({ onNavigate }: CampaignsProps) {
     <div>
       <div className="bg-[#1a3a2a] py-14 px-8 text-center">
         <h1 className="font-serif text-white text-[2.2rem] mb-2">
-          All Campaigns
+          Our Programs
         </h1>
         <p className="text-white/60 text-[.95rem]">
-          Find a cause that moves you and make a difference today.
+          Support primary, O Level, A Level, technical, and IT skills programs
+          that open doors for learners and future earners.
         </p>
       </div>
 
@@ -58,7 +59,7 @@ export default function Campaigns({ onNavigate }: CampaignsProps) {
       </div>
 
       <footer className="bg-[#1a3a2a] text-white/55 text-center py-8 text-[13px] mt-12">
-        © 2025 Kafalah Uganda Charity Platform
+        © 2025 Education & Skills Foundation
       </footer>
     </div>
   );

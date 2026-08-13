@@ -8,7 +8,7 @@ export default function Gallery() {
           Media Gallery
         </h1>
         <p className="text-white/60 text-[.95rem]">
-          Images and videos from our campaigns in the field.
+          Images and videos from our education and skills programs.
         </p>
       </div>
 
@@ -37,7 +37,7 @@ export default function Gallery() {
       </div>
 
       <footer className="bg-[#1a3a2a] text-white/55 text-center py-8 text-[13px] mt-8">
-        © 2025 Kafalah Uganda Charity Platform
+        © 2025 Education & Skills Foundation
       </footer>
     </div>
   );

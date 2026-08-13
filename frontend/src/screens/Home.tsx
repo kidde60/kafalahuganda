@@ -84,7 +84,7 @@ export default function Home({ onNavigate }: HomeProps) {
                   <div>
                     <div className="font-serif text-[1.5rem]">Amina Kato</div>
                     <div className="text-[13px] text-white/60">
-                      Primary 6 · Kampala, Uganda
+                      Primary 3 · Kampala, Uganda
                     </div>
                   </div>
                 </div>
@@ -224,9 +224,9 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
           <div className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-5">
             {[
-              { name: "Amina Kato", grade: "Primary 6", school: "St. Joseph Primary School", id: "amina-k" },
-              { name: "Joshua Muwonge", grade: "Senior 1", school: "Bright Future Secondary School", id: "joshua-m" },
-              { name: "Faith Nansubuga", grade: "Primary 5", school: "Hope Skills Academy", id: "faith-n" },
+              { name: "Amina Kato", grade: "Primary 3", school: "St. Joseph Primary School", id: "p3-girl" },
+              { name: "Sarah Namutebi", grade: "Senior 2", school: "Bright Future Secondary School", id: "s2-girl" },
+              { name: "Brian Kizza", grade: "Motor Vehicle Technology", school: "Jinja Technical Institute", id: "motor-vehicle-tech" },
             ].map((student) => (
               <button
                 key={student.id}

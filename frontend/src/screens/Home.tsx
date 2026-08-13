@@ -12,7 +12,7 @@ export default function Home({ onNavigate }: HomeProps) {
   return (
     <div>
       {/* Hero */}
-      <div className="relative overflow-hidden bg-[linear-gradient(135deg,#10261b_0%,#1a3a2a_52%,#214a33_100%)] px-8 py-20 md:py-24">
+      <div className="relative overflow-hidden bg-[linear-gradient(135deg,#10261b_0%,#1a3a2a_52%,#214a33_100%)] px-4 py-16 sm:px-8 md:py-24">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12),transparent_28%),radial-gradient(circle_at_20%_30%,rgba(76,175,125,0.2),transparent_24%)]" />
         <div className="absolute -right-16 top-10 h-72 w-72 rounded-full bg-[#4caf7d]/10 blur-3xl" />
         <div className="absolute -left-20 bottom-0 h-80 w-80 rounded-full bg-white/5 blur-3xl" />
@@ -48,7 +48,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 </div>
               ))}
             </div>
-            <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start">
               <button
                 className="rounded-lg border-none bg-[#4caf7d] px-8 py-[13px] text-[15px] font-medium text-white transition-all hover:-translate-y-px hover:bg-[#3d9e6a]"
                 onClick={() => onNavigate("students")}
@@ -126,7 +126,7 @@ export default function Home({ onNavigate }: HomeProps) {
       </div>
 
       {/* Stats strip */}
-      <div className="grid grid-cols-3 border-b border-[#e5e0d8] bg-white">
+      <div className="grid grid-cols-1 border-b border-[#e5e0d8] bg-white sm:grid-cols-3">
         {[
           { num: "$2.4M", label: "Raised for learning" },
           { num: "48", label: "Active programs" },
@@ -134,7 +134,7 @@ export default function Home({ onNavigate }: HomeProps) {
         ].map((s, i) => (
           <div
             key={i}
-            className={`py-8 px-4 text-center ${i < 2 ? "border-r border-[#e5e0d8]" : ""}`}
+            className={`py-8 px-4 text-center ${i < 2 ? "sm:border-r border-[#e5e0d8]" : ""}`}
           >
             <div className="font-serif text-[2.2rem] text-[#1a3a2a] font-bold">
               {s.num}
@@ -144,9 +144,9 @@ export default function Home({ onNavigate }: HomeProps) {
         ))}
       </div>
 
-      <div className="bg-[#f7f5f0] px-8 py-16">
+      <div className="bg-[#f7f5f0] px-4 py-16 sm:px-8">
         <div className="mx-auto max-w-[1100px]">
-          <div className="mb-10 flex items-baseline justify-between">
+          <div className="mb-10 flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
             <div className="font-serif text-[1.75rem] text-[#1a3a2a]">
               Why Sponsors Give Here
             </div>
@@ -186,8 +186,8 @@ export default function Home({ onNavigate }: HomeProps) {
       </div>
 
       {/* Featured campaigns */}
-      <div className="mx-auto max-w-[1100px] px-8 py-16">
-        <div className="mb-10 flex items-baseline justify-between">
+      <div className="mx-auto max-w-[1100px] px-4 py-16 sm:px-8">
+        <div className="mb-10 flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
           <div className="font-serif text-[1.75rem] text-[#1a3a2a]">
             Featured Programs
           </div>
@@ -198,7 +198,7 @@ export default function Home({ onNavigate }: HomeProps) {
             View all →
           </span>
         </div>
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-6">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-6">
           {featured.map((c) => (
             <CampaignCard
               key={c.id}
@@ -209,9 +209,9 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </div>
 
-      <div className="bg-[#f7f5f0] px-8 py-16">
+      <div className="bg-[#f7f5f0] px-4 py-16 sm:px-8">
         <div className="mx-auto max-w-[1100px]">
-          <div className="mb-10 flex items-baseline justify-between">
+          <div className="mb-10 flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
             <div className="font-serif text-[1.75rem] text-[#1a3a2a]">
               Sponsored Students
             </div>
@@ -222,7 +222,7 @@ export default function Home({ onNavigate }: HomeProps) {
               View all →
             </span>
           </div>
-          <div className="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-5">
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-5">
             {[
               { name: "Amina Kato", grade: "Primary 6", school: "St. Joseph Primary School", id: "amina-k" },
               { name: "Joshua Muwonge", grade: "Senior 1", school: "Bright Future Secondary School", id: "joshua-m" },
@@ -244,7 +244,7 @@ export default function Home({ onNavigate }: HomeProps) {
       </div>
 
       {/* Impact section */}
-      <div className="bg-[#1a3a2a] px-8 py-16">
+      <div className="bg-[#1a3a2a] px-4 py-16 sm:px-8">
         <div className="mx-auto max-w-[1100px] text-center">
           <h2 className="font-serif text-white text-[2rem] mb-3">
             Our Impact in Numbers

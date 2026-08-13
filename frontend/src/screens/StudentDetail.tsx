@@ -7,7 +7,7 @@ interface StudentDetailProps {
 
 export default function StudentDetail({ student, onNavigate }: StudentDetailProps) {
   return (
-    <div className="max-w-[1100px] mx-auto px-8 py-10">
+    <div className="mx-auto max-w-[1100px] px-4 py-8 sm:px-8 sm:py-10">
       <button
         className="text-[13px] text-[#4caf7d] font-medium mb-6"
         onClick={() => onNavigate("students")}
@@ -15,13 +15,13 @@ export default function StudentDetail({ student, onNavigate }: StudentDetailProp
         ← Back to students
       </button>
 
-      <div className="grid grid-cols-[1fr_380px] gap-8">
+      <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
         <div>
           <div className="bg-white border border-[#e5e0d8] rounded-2xl p-6 mb-6">
-            <div className="flex items-center gap-4">
-              <div className="text-[4rem]">{student.avatar}</div>
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+              <div className="text-[3.5rem] sm:text-[4rem]">{student.avatar}</div>
               <div>
-                <h1 className="font-serif text-[2rem] text-[#1a3a2a]">
+                <h1 className="font-serif text-[1.8rem] text-[#1a3a2a] sm:text-[2rem]">
                   {student.fullName}
                 </h1>
                 <div className="text-[14px] text-[#6b7280]">
@@ -37,7 +37,7 @@ export default function StudentDetail({ student, onNavigate }: StudentDetailProp
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid gap-6 md:grid-cols-2">
             <div className="bg-white border border-[#e5e0d8] rounded-2xl p-6">
               <h2 className="font-serif text-[1.2rem] text-[#1a3a2a] mb-4">
                 Fees Structure
@@ -72,7 +72,7 @@ export default function StudentDetail({ student, onNavigate }: StudentDetailProp
         </div>
 
         <div>
-          <div className="bg-[#1a3a2a] text-white rounded-2xl p-6 sticky top-20">
+          <div className="bg-[#1a3a2a] text-white rounded-2xl p-6 lg:sticky lg:top-20">
             <div className="text-[13px] uppercase tracking-[.12em] text-white/60">
               Sponsor this child
             </div>

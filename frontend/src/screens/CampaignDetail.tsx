@@ -30,7 +30,7 @@ export default function CampaignDetail({
 
   return (
     <div>
-      <div className="grid grid-cols-[1fr_360px] gap-8 max-w-[1100px] mx-auto px-8 py-10">
+      <div className="grid gap-8 max-w-[1100px] mx-auto px-4 py-8 lg:grid-cols-[1fr_360px] sm:px-8 sm:py-10">
         {/* Main */}
         <div>
           <div
@@ -68,7 +68,7 @@ export default function CampaignDetail({
           <div className="font-serif text-[1.1rem] text-[#1a3a2a] mb-4 font-medium">
             Campaign Gallery
           </div>
-          <div className="grid grid-cols-3 gap-3 mt-6">
+          <div className="grid grid-cols-2 gap-3 mt-6 sm:grid-cols-3">
             {mediaItems.map((m, i) => (
               <div
                 key={i}
@@ -83,7 +83,7 @@ export default function CampaignDetail({
 
         {/* Donate card */}
         <div>
-          <div className="bg-white border border-[#e5e0d8] rounded-[14px] p-7 sticky top-20">
+          <div className="bg-white border border-[#e5e0d8] rounded-[14px] p-7 lg:sticky lg:top-20">
             <h3 className="font-serif text-[1.25rem] mb-1 text-[#1a3a2a]">
               Support This Campaign
             </h3>

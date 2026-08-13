@@ -8,7 +8,7 @@ interface StudentsProps {
 export default function Students({ onNavigate }: StudentsProps) {
   return (
     <div>
-      <div className="bg-[#1a3a2a] py-14 px-8 text-center">
+      <div className="bg-[#1a3a2a] px-4 py-14 text-center sm:px-8">
         <h1 className="font-serif text-white text-[2.2rem] mb-2">
           Sponsored Students
         </h1>
@@ -19,8 +19,8 @@ export default function Students({ onNavigate }: StudentsProps) {
         </p>
       </div>
 
-      <div className="py-10 px-8 max-w-[1100px] mx-auto">
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-6">
+      <div className="mx-auto max-w-[1100px] px-4 py-10 sm:px-8">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-6">
           {students.map((student) => {
             const pct = Math.min(
               100,

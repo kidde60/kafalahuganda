@@ -9,6 +9,9 @@ import Donate from "./screens/Donate";
 import AdminLogin from "./screens/AdminLogin";
 import AdminDashboard from "./screens/AdminDashboard";
 import Gallery from "./screens/Gallery";
+import Students from "./screens/Students";
+import StudentDetail from "./screens/StudentDetail";
+import { students } from "./data";
 
 const HIDE_NAV_SCREENS: Screen[] = ["admin", "admin-login"];
 
@@ -17,15 +20,21 @@ function App() {
   const [selectedCampaignId, setSelectedCampaignId] = useState<string>(
     campaigns[0].id,
   );
+  const [selectedStudentId, setSelectedStudentId] = useState<string>(
+    students[0].id,
+  );
 
-  function navigate(target: Screen, campaignId?: string) {
-    if (campaignId) setSelectedCampaignId(campaignId);
+  function navigate(target: Screen, id?: string) {
+    if (target === "detail" && id) setSelectedCampaignId(id);
+    if (target === "student-detail" && id) setSelectedStudentId(id);
     setScreen(target);
     window.scrollTo(0, 0);
   }
 
   const selectedCampaign =
     campaigns.find((c) => c.id === selectedCampaignId) ?? campaigns[0];
+  const selectedStudent =
+    students.find((s) => s.id === selectedStudentId) ?? students[0];
   const showNav = !HIDE_NAV_SCREENS.includes(screen);
 
   return (
@@ -35,6 +44,10 @@ function App() {
       {screen === "campaigns" && <Campaigns onNavigate={navigate} />}
       {screen === "detail" && (
         <CampaignDetail campaign={selectedCampaign} onNavigate={navigate} />
+      )}
+      {screen === "students" && <Students onNavigate={navigate} />}
+      {screen === "student-detail" && (
+        <StudentDetail student={selectedStudent} onNavigate={navigate} />
       )}
       {screen === "donate" && <Donate />}
       {screen === "admin-login" && <AdminLogin onNavigate={navigate} />}

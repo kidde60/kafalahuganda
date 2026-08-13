@@ -6,9 +6,9 @@ interface AdminDashboardProps {
 
 const recentDonations = [
   { donor: "Sarah K.", amount: "$250", campaign: "Schools", status: "Paid" },
-  { donor: "Anonymous", amount: "$50", campaign: "Water", status: "Paid" },
-  { donor: "James M.", amount: "$100", campaign: "Health", status: "Paid" },
-  { donor: "Aisha N.", amount: "$25", campaign: "Food", status: "Pending" },
+  { donor: "Anonymous", amount: "$50", campaign: "Skills", status: "Paid" },
+  { donor: "James M.", amount: "$100", campaign: "Digital", status: "Paid" },
+  { donor: "Aisha N.", amount: "$25", campaign: "Teachers", status: "Pending" },
   { donor: "Tom B.", amount: "$500", campaign: "Schools", status: "Paid" },
 ];
 
@@ -20,10 +20,10 @@ const campaignProgress = [
     pct: "72%",
     color: "green",
   },
-  { name: "Water", raised: "$44K", goal: "$50K", pct: "88%", color: "green" },
-  { name: "Health", raised: "$82K", goal: "$200K", pct: "41%", color: "amber" },
-  { name: "Food", raised: "$27.5K", goal: "$50K", pct: "55%", color: "amber" },
-  { name: "Trees", raised: "$14.5K", goal: "$50K", pct: "29%", color: "red" },
+  { name: "Skills", raised: "$44K", goal: "$50K", pct: "88%", color: "green" },
+  { name: "Digital", raised: "$82K", goal: "$200K", pct: "41%", color: "amber" },
+  { name: "Teachers", raised: "$27.5K", goal: "$50K", pct: "55%", color: "amber" },
+  { name: "Libraries", raised: "$14.5K", goal: "$50K", pct: "29%", color: "red" },
 ];
 
 type BadgeColor = "green" | "amber" | "red";
@@ -46,7 +46,7 @@ export default function AdminDashboard({ onNavigate }: AdminDashboardProps) {
       {/* Sidebar */}
       <div className="bg-[#1a3a2a] py-6 sticky top-0 h-screen overflow-y-auto">
         <div className="font-serif text-white text-[1.1rem] px-6 pb-6 border-b border-white/10 mb-4 font-bold">
-          🌱 Kafalah Uganda Admin
+          🎓 Education & Skills Foundation Admin
         </div>
         {sidebarItems.map((item) => (
           <div
@@ -247,9 +247,9 @@ export default function AdminDashboard({ onNavigate }: AdminDashboardProps) {
             <div className="flex gap-3">
               <select className="flex-1 border-[1.5px] border-[#e5e0d8] rounded-lg py-[10px] px-[14px] text-[14px] outline-none text-[#1a1a1a]">
                 <option>Select campaign...</option>
-                <option>Build 10 Schools</option>
-                <option>Clean Water Wells</option>
-                <option>Mobile Clinics</option>
+                <option>Upgrade 10 Learning Centers</option>
+                <option>Vocational Skills for 500 Youth</option>
+                <option>Digital Literacy Labs</option>
               </select>
               <button className="bg-[#4caf7d] text-white border-none py-[10px] px-5 rounded-lg text-[13px] font-medium cursor-pointer hover:bg-[#3d9e6a] transition-colors">
                 Upload
